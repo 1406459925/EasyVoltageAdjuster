@@ -1,0 +1,78 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\马宁\Desktop\USB调速器\PCBDOC\USB调压器.PcbDoc
+Date     : 2020/4/11
+Time     : 23:47:29
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) ((InComponent('K1') or InComponent('K2')   )  and IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) ((InComponent('K1') or InComponent('K2')   )  and IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=200mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=15.748mil) (MaxHoleWidth=28mil) (PreferredHoleWidth=15.748mil) (MinWidth=27.559mil) (MaxWidth=50mil) (PreferedWidth=27.559mil) (All)
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=10mil) (Max=10mil) (Prefered=10mil)  and Width Constraints (Min=15mil) (Max=15mil) (Prefered=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Room 显示模块 (Bounding Region = (3374.685mil, 1835mil, 4975mil, 2535mil) (InComponentClass('显示模块'))
+Rule Violations :0
+
+Processing Rule : Room 电源模块 (Bounding Region = (1885mil, 1555mil, 5570mil, 2500mil) (InComponentClass('电源模块'))
+Rule Violations :0
+
+Processing Rule : Room INFRARED (Bounding Region = (2695mil, 2170mil, 3160mil, 2735mil) (InComponentClass('INFRARED'))
+Rule Violations :0
+
+Processing Rule : Room U_SX1308 (Bounding Region = (3005mil, 1435mil, 3695mil, 2165mil) (InComponentClass('U_SX1308'))
+Rule Violations :0
+
+Processing Rule : Room U_ME6209 (Bounding Region = (2859.253mil, 1740mil, 3045mil, 2145.52mil) (InComponentClass('U_ME6209'))
+Rule Violations :0
+
+Processing Rule : Room U_NTC (Bounding Region = (4765mil, 1485mil, 5095mil, 1740mil) (InComponentClass('U_NTC'))
+Rule Violations :0
+
+Processing Rule : Room 按键模块 (Bounding Region = (2910mil, 1485mil, 4590mil, 2520mil) (InComponentClass('按键模块'))
+Rule Violations :0
+
+Processing Rule : Room 主控模块 (Bounding Region = (2875mil, 2045mil, 3525mil, 2530mil) (InComponentClass('主控模块'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:01

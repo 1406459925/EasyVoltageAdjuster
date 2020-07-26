@@ -1,0 +1,592 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V1.31.1.50058 for STM8                 21/Jul/2020  23:14:24 #
+# Copyright 2010-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  G:\WorkSpace\USB Power\Software\USB\Release\Exe\USB_Powe #
+#                    r.out                                                    #
+#    Map file     =  G:\WorkSpace\USB Power\Software\USB\Release\List\USB_Pow #
+#                    er.map                                                   #
+#    Command line =  "G:\WorkSpace\USB Power\Software\USB\Release\Obj\74hc595 #
+#                    .o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj\adc #
+#                    .o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj\con #
+#                    fig.o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj\ #
+#                    controller.o" "G:\WorkSpace\USB                          #
+#                    Power\Software\USB\Release\Obj\display.o"                #
+#                    "G:\WorkSpace\USB Power\Software\USB\Release\Obj\eeprom. #
+#                    o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj\infr #
+#                    ared.o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj #
+#                    \key.o" "G:\WorkSpace\USB Power\Software\USB\Release\Obj #
+#                    \main.o" "G:\WorkSpace\USB Power\Software\USB\Release\Ob #
+#                    j\menu.o" "G:\WorkSpace\USB                              #
+#                    Power\Software\USB\Release\Obj\pid.o" "G:\WorkSpace\USB  #
+#                    Power\Software\USB\Release\Obj\share.o"                  #
+#                    "G:\WorkSpace\USB Power\Software\USB\Release\Obj\temp.o" #
+#                     "G:\WorkSpace\USB Power\Software\USB\Release\Obj\tim.o" #
+#                     --redirect _Printf=_PrintfSmall --redirect              #
+#                    _Scanf=_ScanfSmall -o "G:\WorkSpace\USB                  #
+#                    Power\Software\USB\Release\Exe\USB_Power.out" --map      #
+#                    "G:\WorkSpace\USB Power\Software\USB\Release\List\USB_Po #
+#                    wer.map" --config D:\IAR\stm8\config\lnkstm8s003f3.icf   #
+#                    --config_def _CSTACK_SIZE=0x100 --config_def             #
+#                    _HEAP_SIZE=0x100 --entry __iar_program_start             #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__code_model               = small
+__core                     = stm8
+__data_model               = medium
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__rt_version               = 4
+
+
+*******************************************************************************
+*** RESERVED RANGES
+***
+
+Ranges reserved by absolute symbols:
+   [0x005064-0x005064]
+   [0x0050c4-0x0050c4]
+   [0x005260-0x005260]
+   [0x005261-0x005261]
+   [0x005262-0x005262]
+   [0x005263-0x005263]
+   [0x005264-0x005264]
+   [0x00530f-0x00530f]
+   [0x005310-0x005310]
+   [0x005315-0x005315]
+   [0x005316-0x005316]
+   [0x005404-0x005404]
+   [0x005405-0x005405]
+   [0x005407-0x005407]
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x000000-0x0000ff] { rw section .vregs };
+"A2":  place at end of [0x000000-0x0003ff] { block CSTACK };
+"P2":  place in [from 0x000000 to 0x0003ff] {
+          block HEAP, rw section .far.bss, rw section .far.data,
+          rw section .far.noinit, rw section .far_func.textrw,
+          rw section .huge.bss, rw section .huge.data, rw section .huge.noinit,
+          rw section .huge_func.textrw, rw section .iar.dynexit,
+          rw section .near.bss, rw section .near.data, rw section .near.noinit,
+          rw section .near_func.textrw };
+"A3":  place at start of [0x008000-0x009fff] { block INTVEC };
+"P3":  place in [from 0x008000 to 0x009fff] {
+          ro section .far.data_init, ro section .far_func.textrw_init,
+          ro section .huge.data_init, ro section .huge_func.textrw_init,
+          ro section .iar.init_table, ro section .init_array,
+          ro section .near.data_init, ro section .near.rodata,
+          ro section .near_func.text, ro section .near_func.textrw_init,
+          ro section .tiny.data_init, ro section .tiny.rodata_init };
+
+  Section              Kind      Address    Size  Object
+  -------              ----      -------    ----  ------
+"A1":                                       0x10
+  .vregs               uninit   0x000000    0x10  vregs.o [4]
+                              - 0x000010    0x10
+
+"P2", part 1 of 2:                          0x46
+  P2 s0                         0x000010    0x46  <Init block>
+    .near_func.textrw  inited   0x000010    0x27  eeprom.o [1]
+    .near.data         inited   0x000037    0x1b  menu.o [1]
+    .near.data         inited   0x000052     0x1  controller.o [1]
+    .near.data         inited   0x000053     0x1  menu.o [1]
+    .near.data         inited   0x000054     0x1  menu.o [1]
+    .near.data         inited   0x000055     0x1  menu.o [1]
+                              - 0x000056    0x46
+
+"P2", part 2 of 2:                         0x138
+  .near.bss            zero     0x000056    0x69  adc.o [1]
+  .near.bss            zero     0x0000bf    0x40  config.o [1]
+  .near.bss            zero     0x0000ff    0x3c  controller.o [1]
+  .near.bss            zero     0x00013b    0x3c  controller.o [1]
+  .near.bss            zero     0x000177     0x6  display.o [1]
+  .near.bss            zero     0x00017d     0x5  infrared.o [1]
+  .near.bss            zero     0x000182     0x2  controller.o [1]
+  .near.bss            zero     0x000184     0x2  errno.o [4]
+  .near.bss            zero     0x000186     0x1  key.o [1]
+  .near.bss            zero     0x000187     0x1  key.o [1]
+  .near.bss            zero     0x000188     0x1  main.o [1]
+  .near.bss            zero     0x000189     0x1  menu.o [1]
+  .near.bss            zero     0x00018a     0x1  menu.o [1]
+  .near.bss            zero     0x00018b     0x1  pid.o [1]
+  .near.bss            zero     0x00018c     0x1  tim.o [1]
+  .near.bss            zero     0x00018d     0x1  tim.o [1]
+                              - 0x00018e   0x138
+
+"A2":                                      0x100
+  CSTACK                        0x000300   0x100  <Block>
+    CSTACK             uninit   0x000300   0x100  <Block tail>
+                              - 0x000400   0x100
+
+"A3":                                       0x80
+  INTVEC                        0x008000    0x80  <Block>
+    .intvec            const    0x008000    0x80  interrupt.o [4]
+                              - 0x008080    0x80
+
+"P3":                                     0x192b
+  .near_func.text      ro code  0x008080   0x416  float.o [4]
+  .near_func.text      ro code  0x008496   0x226  menu.o [1]
+  .near_func.text      ro code  0x0086bc   0x173  xlog.o [4]
+  .near_func.text      ro code  0x00882f   0x124  main.o [1]
+  .near_func.text      ro code  0x008953   0x120  display.o [1]
+  .near_func.text      ro code  0x008a73   0x106  vreg_util.o [4]
+  .near_func.text      ro code  0x008b79    0xe9  pid.o [1]
+  .near_func.text      ro code  0x008c62    0xca  display.o [1]
+  .near_func.text      ro code  0x008d2c    0xb3  controller.o [1]
+  .near_func.text      ro code  0x008ddf    0xac  infrared.o [1]
+  .near_func.text      ro code  0x008e8b    0x9d  display.o [1]
+  .near_func.text      ro code  0x008f28    0x82  key.o [1]
+  .near_func.text      ro code  0x008faa    0x7f  long_util.o [4]
+  .near_func.text      ro code  0x009029    0x77  controller.o [1]
+  .near_func.text      ro code  0x0090a0    0x71  pid.o [1]
+  .near_func.text      ro code  0x009111    0x6d  pid.o [1]
+  .near_func.text      ro code  0x00917e    0x69  temp.o [1]
+  .near_func.text      ro code  0x0091e7    0x61  adc.o [1]
+  .near_func.text      ro code  0x009248    0x55  config.o [1]
+  .near_func.text      ro code  0x00929d    0x52  float_libsup.o [4]
+  .near_func.text      ro code  0x0092ef    0x48  74hc595.o [1]
+  .near_func.text      ro code  0x009337    0x44  share.o [1]
+  .near_func.text      ro code  0x00937b    0x3f  main.o [1]
+  .near_func.text      ro code  0x0093ba    0x39  display.o [1]
+  .near_func.text      ro code  0x0093f3    0x39  menu.o [1]
+  .near_func.text      ro code  0x00942c    0x37  tim.o [1]
+  .near_func.text      ro code  0x009463    0x34  tim.o [1]
+  .near_func.text      ro code  0x009497    0x32  tim.o [1]
+  .near_func.text      ro code  0x0094c9    0x31  74hc595.o [1]
+  .near_func.text      ro code  0x0094fa    0x30  menu.o [1]
+  .near_func.text      ro code  0x00952a    0x2a  adc.o [1]
+  .near_func.text      ro code  0x009554    0x28  init_small.o [4]
+  .near_func.text      ro code  0x00957c    0x26  short.o [4]
+  .near_func.text      ro code  0x0095a2    0x25  infrared.o [1]
+  .near_func.text      ro code  0x0095c7    0x25  dc_util.o [4]
+  .near_func.text      ro code  0x0095ec    0x21  config.o [1]
+  .near_func.text      ro code  0x00960d    0x1f  display.o [1]
+  .iar.init_table      const    0x00962c    0x12  - Linker created -
+  .near_func.text      ro code  0x00963e    0x1f  xlog.o [4]
+  .near_func.text      ro code  0x00965d    0x1e  display.o [1]
+  .near_func.text      ro code  0x00967b    0x1e  init_small.o [4]
+  .near_func.text      ro code  0x009699    0x1d  tim.o [1]
+  .near_func.text      ro code  0x0096b6    0x1c  config.o [1]
+  .near_func.text      ro code  0x0096d2    0x19  infrared.o [1]
+  .near_func.text      ro code  0x0096eb    0x19  key.o [1]
+  .near_func.text      ro code  0x009704    0x19  char.o [4]
+  .near_func.text      ro code  0x00971d    0x18  eeprom.o [1]
+  .near_func.text      ro code  0x009735    0x17  display.o [1]
+  .near_func.text      ro code  0x00974c    0x17  init.o [4]
+  .near_func.text      ro code  0x009763    0x16  adc.o [1]
+  .near_func.text      ro code  0x009779    0x15  infrared.o [1]
+  .near_func.text      ro code  0x00978e    0x14  display.o [1]
+  .near_func.text      ro code  0x0097a2    0x14  eeprom.o [1]
+  .near.rodata         const    0x0097b6    0x13  display.o [1]
+  .near_func.text      ro code  0x0097c9    0x13  menu.o [1]
+  .near_func.text      ro code  0x0097dc    0x13  menu.o [1]
+  .near_func.text      ro code  0x0097ef    0x13  cstartup.o [4]
+  .near_func.text      ro code  0x009802    0x13  long.o [4]
+  .near_func.text      ro code  0x009815    0x12  controller.o [1]
+  .near_func.text      ro code  0x009827    0x12  controller.o [1]
+  .near_func.text      ro code  0x009839    0x11  adc.o [1]
+  .near_func.text      ro code  0x00984a    0x11  share.o [1]
+  .near_func.text      ro code  0x00985b    0x10  controller.o [1]
+  .near_func.text      ro code  0x00986b     0xd  adc.o [1]
+  .near_func.text      ro code  0x009878     0xc  tim.o [1]
+  .near_func.text      ro code  0x009884     0xb  controller.o [1]
+  .near_func.text      ro code  0x00988f     0xb  pid.o [1]
+  .near_func.text      ro code  0x00989a     0xb  pid.o [1]
+  .near_func.text      ro code  0x0098a5     0xb  tim.o [1]
+  .near_func.text      ro code  0x0098b0     0xa  config.o [1]
+  .near_func.text      ro code  0x0098ba     0x9  display.o [1]
+  .near_func.text      ro code  0x0098c3     0x9  eeprom.o [1]
+  .near_func.text      ro code  0x0098cc     0x9  key.o [1]
+  .near_func.text      ro code  0x0098d5     0x9  menu.o [1]
+  .near_func.text      ro code  0x0098de     0x9  menu.o [1]
+  .near_func.text      ro code  0x0098e7     0x9  xlog.o [4]
+  .near_func.text      ro code  0x0098f0     0x8  adc.o [1]
+  .near_func.text      ro code  0x0098f8     0x8  adc.o [1]
+  .near_func.text      ro code  0x009900     0x8  pid.o [1]
+  .near_func.text      ro code  0x009908     0x8  xlog.o [4]
+  .near_func.text      ro code  0x009910     0x7  infrared.o [1]
+  .near_func.text      ro code  0x009917     0x6  display.o [1]
+  .near_func.text      ro code  0x00991d     0x6  infrared.o [1]
+  .near_func.text      ro code  0x009923     0x6  pid.o [1]
+  .near_func.text      ro code  0x009929     0x6  tim.o [1]
+  .near_func.text      ro code  0x00992f     0x5  eeprom.o [1]
+  .near_func.text      ro code  0x009934     0x5  pid.o [1]
+  .near_func.text      ro code  0x009939     0x5  tim.o [1]
+  .near_func.text      ro code  0x00993e     0x5  cexit.o [4]
+  .near_func.text      ro code  0x009943     0x4  controller.o [1]
+  .near_func.text      ro code  0x009947     0x4  pid.o [1]
+  .near_func.text      ro code  0x00994b     0x4  pid.o [1]
+  .near_func.text      ro code  0x00994f     0x4  tim.o [1]
+  .near_func.text      ro code  0x009953     0x4  tim.o [1]
+  .near_func.text      ro code  0x009957     0x3  interrupt.o [4]
+  .near_func.text      ro code  0x00995a     0x3  low_level_init.o [4]
+  .near_func.text      ro code  0x00995d     0x3  exit.o [4]
+  .near_func.text      ro code  0x009960     0x3  unhandled_exception.o [4]
+  .near_func.text      ro code  0x009963     0x2  xxexit.o [3]
+  Initializer bytes    ro data  0x009965    0x46  <for P2 s0>
+                              - 0x0099ab  0x192b
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address   Size
+          -------   ----
+Zero (__iar_zero_init2)
+    1 destination range, total size 0x138:
+          0x000056  0x138
+
+Copy (__iar_copy_init2)
+    1 source range, total size 0x46:
+          0x009965   0x46
+    1 destination range, total size 0x46:
+          0x000010   0x46
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw code  ro data  rw data
+    ------                 -------  -------  -------  -------
+G:\WorkSpace\USB Power\Software\USB\Release\Obj: [1]
+    74hc595.o                  121
+    adc.o                      207                        105
+    config.o                   156                         64
+    controller.o               365                 1      123
+    display.o                  823                19        6
+    eeprom.o                    58       39       39
+    infrared.o                 268                          5
+    key.o                      164                          2
+    main.o                     355                          1
+    menu.o                     711                30       32
+    pid.o                      504                          1
+    share.o                     85
+    temp.o                     105
+    tim.o                      228                          2
+    ---------------------------------------------------------
+    Total:                   4 150       39       89      341
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+dbgstm8smn.a: [3]
+    xxexit.o                     2
+    ---------------------------------------------------------
+    Total:                       2
+
+dlstm8smn.a: [4]
+    cexit.o                      5
+    char.o                      25
+    cstartup.o                  19
+    dc_util.o                   37
+    errno.o                                                 2
+    exit.o                       3
+    float.o                  1 046
+    float_libsup.o              82
+    init.o                      23
+    init_small.o                70
+    interrupt.o                  3               128
+    long.o                      19
+    long_util.o                127
+    low_level_init.o             3
+    short.o                     38
+    unhandled_exception.o        3
+    vreg_util.o                262
+    vregs.o                                                16
+    xlog.o                     419
+    ---------------------------------------------------------
+    Total:                   2 184               128       18
+
+    Linker created                                18      256
+-------------------------------------------------------------
+    Grand Total:             6 336       39      235      615
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address   Size  Type      Object
+-----                     -------   ----  ----      ------
+?b0                      0x000000         Data  Gb  vregs.o [4]
+?b1                      0x000001         Data  Gb  vregs.o [4]
+?b10                     0x00000a         Data  Gb  vregs.o [4]
+?b11                     0x00000b         Data  Gb  vregs.o [4]
+?b12                     0x00000c         Data  Gb  vregs.o [4]
+?b13                     0x00000d         Data  Gb  vregs.o [4]
+?b14                     0x00000e         Data  Gb  vregs.o [4]
+?b15                     0x00000f         Data  Gb  vregs.o [4]
+?b2                      0x000002         Data  Gb  vregs.o [4]
+?b3                      0x000003         Data  Gb  vregs.o [4]
+?b4                      0x000004         Data  Gb  vregs.o [4]
+?b5                      0x000005         Data  Gb  vregs.o [4]
+?b6                      0x000006         Data  Gb  vregs.o [4]
+?b7                      0x000007         Data  Gb  vregs.o [4]
+?b8                      0x000008         Data  Gb  vregs.o [4]
+?b9                      0x000009         Data  Gb  vregs.o [4]
+?dc32_l0                 0x0095c7         Code  Gb  dc_util.o [4]
+?dc32_l1                 0x0095d4         Code  Gb  dc_util.o [4]
+?dc32_px                 0x0095e1         Code  Gb  dc_util.o [4]
+?e0                      0x000001         Data  Gb  vregs.o [4]
+?e1                      0x000005         Data  Gb  vregs.o [4]
+?e2                      0x000009         Data  Gb  vregs.o [4]
+?e3                      0x00000d         Data  Gb  vregs.o [4]
+?epilogue_l2             0x008b02         Code  Gb  vreg_util.o [4]
+?epilogue_l2_l3          0x008aff         Code  Gb  vreg_util.o [4]
+?epilogue_w4             0x008b06         Code  Gb  vreg_util.o [4]
+?fadd32_l0_l0_0x         0x0080ad         Code  Gb  float.o [4]
+?fadd32_l0_l0_dc32       0x0080a8         Code  Gb  float.o [4]
+?fadd32_l0_l0_l1         0x0080b0         Code  Gb  float.o [4]
+?fcastf32s16_l0_x        0x008343         Code  Gb  float.o [4]
+?fcastf32u16_l0_x        0x00834a         Code  Gb  float.o [4]
+?fcasts16f32_x_l0        0x008368         Code  Gb  float.o [4]
+?fcmpge32_c_l0_0x        0x0082e1         Code  Gb  float.o [4]
+?fcmpge32_c_l0_dc32      0x0082dc         Code  Gb  float.o [4]
+?fcmplt32_c_l0_0x        0x0082ed         Code  Gb  float.o [4]
+?fcmplt32_c_l0_dc32      0x0082e5         Code  Gb  float.o [4]
+?fcmplt32_c_l0_l1        0x0082ea         Code  Gb  float.o [4]
+?fdiv32_l0_dc32_l1       0x008221         Code  Gb  float.o [4]
+?fdiv32_l0_l0_0x         0x00822b         Code  Gb  float.o [4]
+?fdiv32_l0_l0_dc32       0x008226         Code  Gb  float.o [4]
+?fdiv32_l0_l0_l1         0x00822e         Code  Gb  float.o [4]
+?fmul32_l0_l0_0x         0x008183         Code  Gb  float.o [4]
+?fmul32_l0_l0_dc32       0x00817e         Code  Gb  float.o [4]
+?fmul32_l0_l0_l1         0x008186         Code  Gb  float.o [4]
+?fsub32_l0_dc32_l1       0x00809d         Code  Gb  float.o [4]
+?fsub32_l0_l0_l1         0x0080a2         Code  Gb  float.o [4]
+?inc32_0x_0x             0x009807         Code  Gb  long.o [4]
+?inc32_l0_l0             0x009802         Code  Gb  long.o [4]
+?l0                      0x000000         Data  Gb  vregs.o [4]
+?l1                      0x000004         Data  Gb  vregs.o [4]
+?l2                      0x000008         Data  Gb  vregs.o [4]
+?l3                      0x00000c         Data  Gb  vregs.o [4]
+?load32_0x_l0            0x008fff         Code  Gb  long_util.o [4]
+?load32_0x_l1            0x00900d         Code  Gb  long_util.o [4]
+?load32_0x_l3            0x00901b         Code  Gb  long_util.o [4]
+?load32_asp_l0           0x008ff3         Code  Gb  long_util.o [4]
+?load32_dbsp_l0          0x008fee         Code  Gb  long_util.o [4]
+?load32_l0_0x            0x008fba         Code  Gb  long_util.o [4]
+?load32_l0_asp           0x008faf         Code  Gb  long_util.o [4]
+?load32_l0_dbsp          0x008faa         Code  Gb  long_util.o [4]
+?load32_l0_xsp           0x008fb1         Code  Gb  long_util.o [4]
+?load32_l1_0x            0x008fd6         Code  Gb  long_util.o [4]
+?load32_l1_asp           0x008fcb         Code  Gb  long_util.o [4]
+?load32_l1_dbsp          0x008fc6         Code  Gb  long_util.o [4]
+?load32_l1_xsp           0x008fcd         Code  Gb  long_util.o [4]
+?load32_l3_0x            0x008fe2         Code  Gb  long_util.o [4]
+?load32_xsp_l0           0x008ff5         Code  Gb  long_util.o [4]
+?mov_e0_e1               0x008b14         Code  Gb  vreg_util.o [4]
+?mov_e0_e2               0x008b21         Code  Gb  vreg_util.o [4]
+?mov_e0_e3               0x008b2e         Code  Gb  vreg_util.o [4]
+?mov_e1_e0               0x008b3b         Code  Gb  vreg_util.o [4]
+?mov_e1_e2               0x008b48         Code  Gb  vreg_util.o [4]
+?mov_e1_e3               0x008b55         Code  Gb  vreg_util.o [4]
+?mov_e2_e0               0x008b62         Code  Gb  vreg_util.o [4]
+?mov_e3_e0               0x008b6f         Code  Gb  vreg_util.o [4]
+?mov_l0_l1               0x008b11         Code  Gb  vreg_util.o [4]
+?mov_l0_l2               0x008b1e         Code  Gb  vreg_util.o [4]
+?mov_l0_l3               0x008b2b         Code  Gb  vreg_util.o [4]
+?mov_l1_l0               0x008b38         Code  Gb  vreg_util.o [4]
+?mov_l1_l2               0x008b45         Code  Gb  vreg_util.o [4]
+?mov_l1_l3               0x008b52         Code  Gb  vreg_util.o [4]
+?mov_l2_l0               0x008b5f         Code  Gb  vreg_util.o [4]
+?mov_l3_l0               0x008b6c         Code  Gb  vreg_util.o [4]
+?mov_w1_w3               0x008b17         Code  Gb  vreg_util.o [4]
+?mov_w1_w4               0x008b0a         Code  Gb  vreg_util.o [4]
+?mov_w1_w5               0x008b24         Code  Gb  vreg_util.o [4]
+?mov_w1_w7               0x008b31         Code  Gb  vreg_util.o [4]
+?mov_w3_w1               0x008b3e         Code  Gb  vreg_util.o [4]
+?mov_w3_w5               0x008b4b         Code  Gb  vreg_util.o [4]
+?mov_w3_w7               0x008b58         Code  Gb  vreg_util.o [4]
+?mov_w5_w1               0x008b65         Code  Gb  vreg_util.o [4]
+?mov_w7_w1               0x008b72         Code  Gb  vreg_util.o [4]
+?mul16_x_x_w0            0x00957c         Code  Gb  short.o [4]
+?pop_l0                  0x008acb         Code  Gb  vreg_util.o [4]
+?pop_l1                  0x008ad6         Code  Gb  vreg_util.o [4]
+?pop_l2                  0x008ae1         Code  Gb  vreg_util.o [4]
+?pop_l3                  0x008aec         Code  Gb  vreg_util.o [4]
+?pop_w4                  0x008a8b         Code  Gb  vreg_util.o [4]
+?push_l0                 0x008a9a         Code  Gb  vreg_util.o [4]
+?push_l1                 0x008a9f         Code  Gb  vreg_util.o [4]
+?push_l2                 0x008aa4         Code  Gb  vreg_util.o [4]
+?push_l3                 0x008aa9         Code  Gb  vreg_util.o [4]
+?push_w4                 0x008a73         Code  Gb  vreg_util.o [4]
+?sll16_x_x_a             0x00959a         Code  Gb  short.o [4]
+?smod8_a_b0_a            0x009704         Code  Gb  char.o [4]
+?srl8_a_a_5              0x009718         Code  Gb  char.o [4]
+?w0                      0x000000         Data  Gb  vregs.o [4]
+?w1                      0x000002         Data  Gb  vregs.o [4]
+?w2                      0x000004         Data  Gb  vregs.o [4]
+?w3                      0x000006         Data  Gb  vregs.o [4]
+?w4                      0x000008         Data  Gb  vregs.o [4]
+?w5                      0x00000a         Data  Gb  vregs.o [4]
+?w6                      0x00000c         Data  Gb  vregs.o [4]
+?w7                      0x00000e         Data  Gb  vregs.o [4]
+ADC_DRH {Abs}          0x00005404    0x1  Data  Wk  adc.o [1]
+ADC_DRL {Abs}          0x00005405    0x1  Data  Wk  adc.o [1]
+ADC_GetValue             0x00952a   0x2a  Code  Gb  adc.o [1]
+ADC_INxConversion        0x0091e7   0x61  Code  Gb  adc.o [1]
+ADC_INxOpen              0x009763   0x16  Code  Gb  adc.o [1]
+ADC_Init                 0x009839   0x11  Code  Gb  adc.o [1]
+ADC_TDRL {Abs}         0x00005407    0x1  Data  Wk  adc.o [1]
+Adress_Clear             0x008e8b    0xd  Code  Gb  display.o [1]
+CLK_SWR {Abs}          0x000050c4    0x1  Data  Wk  main.o [1]
+CSTACK$$Base             0x000300          --   Gb  - Linker created -
+CSTACK$$Limit            0x000400          --   Gb  - Linker created -
+Calculate_TemperatureValue
+                         0x00917e   0x69  Code  Gb  temp.o [1]
+CollectAnalog            0x00937b   0x3f  Code  Lc  main.o [1]
+Config_Init              0x009248   0x55  Code  Gb  config.o [1]
+Config_Read              0x0096b6   0x1c  Code  Gb  config.o [1]
+Config_Write             0x0095ec   0x21  Code  Gb  config.o [1]
+Controller_Init          0x008d2c   0xb3  Code  Gb  controller.o [1]
+Delay_Ms                 0x009337   0x44  Code  Gb  share.o [1]
+Delay_Us                 0x00984a   0x11  Code  Gb  share.o [1]
+Display_BlinkSeg         0x00965d   0x1e  Code  Gb  display.o [1]
+Display_Clear            0x00960d   0x1f  Code  Gb  display.o [1]
+Display_Control          0x009917    0x6  Code  Gb  display.o [1]
+Display_Init             0x0093ba   0x39  Code  Gb  display.o [1]
+Display_Logo             0x0089f8   0x6d  Code  Gb  display.o [1]
+Display_Refresh          0x008e98   0x90  Code  Gb  display.o [1]
+Display_WriteChar        0x008953   0x9e  Code  Gb  display.o [1]
+Display_WriteDot         0x009735   0x17  Code  Gb  display.o [1]
+Display_WriteValue       0x008c62   0xca  Code  Gb  display.o [1]
+EEPROM_BlockProgram      0x000010   0x27  Code  Gb  eeprom.o [1]
+EEPROM_Init              0x0097a2   0x14  Code  Gb  eeprom.o [1]
+EEPROM_Lock              0x00992f    0x5  Code  Gb  eeprom.o [1]
+EEPROM_ReadBuffer        0x00971d   0x18  Code  Gb  eeprom.o [1]
+EEPROM_Unlock            0x0098c3    0x9  Code  Gb  eeprom.o [1]
+EXTI_PORTD_IRQHandler    0x008ddf   0xac  Code  Gb  infrared.o [1]
+FLASH_DUKR {Abs}       0x00005064    0x1  Data  Wk  eeprom.o [1]
+Get_TimeCount            0x00994f    0x4  Code  Gb  tim.o [1]
+HC595_Init               0x0094c9   0x31  Code  Gb  74hc595.o [1]
+HC595_WriteByte          0x0092ef   0x48  Code  Gb  74hc595.o [1]
+INTVEC$$Base             0x008000          --   Gb  - Linker created -
+INTVEC$$Limit            0x008080          --   Gb  - Linker created -
+Infrared_GetValue        0x009779   0x15  Code  Gb  infrared.o [1]
+Infrared_Init            0x0096d2   0x19  Code  Gb  infrared.o [1]
+KEY_Init                 0x0096eb   0x19  Code  Gb  key.o [1]
+KEY_Scan                 0x008f28   0x82  Code  Gb  key.o [1]
+Menu                     0x008496  0x226  Code  Gb  menu.o [1]
+Menu_CurrentOk           0x0097dc   0x13  Code  Lc  menu.o [1]
+Menu_Init                0x0093f3   0x39  Code  Gb  menu.o [1]
+Menu_ModeOk              0x0094fa   0x30  Code  Lc  menu.o [1]
+Menu_VoltageOk           0x0097c9   0x13  Code  Lc  menu.o [1]
+PID_Compute              0x008b79   0xe9  Code  Gb  pid.o [1]
+PID_Controller           0x009029   0x77  Code  Gb  controller.o [1]
+PID_GetMode              0x009943    0x4  Code  Gb  controller.o [1]
+PID_GetState             0x009947    0x4  Code  Gb  pid.o [1]
+PID_Init                 0x0090a0   0x71  Code  Gb  pid.o [1]
+PID_Reset                0x009111   0x6d  Code  Gb  pid.o [1]
+PID_SetCurrent           0x009827   0x12  Code  Gb  controller.o [1]
+PID_SetMode              0x009884    0xb  Code  Gb  controller.o [1]
+PID_SetState             0x00994b    0x4  Code  Gb  pid.o [1]
+PID_SetVoltage           0x009815   0x12  Code  Gb  controller.o [1]
+PWM_Init                 0x009699   0x1d  Code  Gb  tim.o [1]
+PWM_Off                  0x009939    0x5  Code  Gb  tim.o [1]
+PWM_Open                 0x0098a5    0xb  Code  Gb  tim.o [1]
+PWM_SetDutyCycle         0x009929    0x6  Code  Gb  tim.o [1]
+Region$$Table$$Base      0x00962c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x00963e          --   Gb  - Linker created -
+Set_TimeCount            0x009953    0x4  Code  Gb  tim.o [1]
+TIM1_ARRH {Abs}        0x00005262    0x1  Data  Wk  tim.o [1]
+TIM1_ARRL {Abs}        0x00005263    0x1  Data  Wk  tim.o [1]
+TIM1_Init                0x00942c   0x37  Code  Gb  tim.o [1]
+TIM1_PSCRH {Abs}       0x00005260    0x1  Data  Wk  tim.o [1]
+TIM1_PSCRL {Abs}       0x00005261    0x1  Data  Wk  tim.o [1]
+TIM1_RCR {Abs}         0x00005264    0x1  Data  Wk  tim.o [1]
+TIM1_UPD_OVF_TRG_BRK_IRQHandler
+                         0x009463   0x34  Code  Gb  tim.o [1]
+TIM2_ARRH {Abs}        0x0000530f    0x1  Data  Wk  tim.o [1]
+TIM2_ARRL {Abs}        0x00005310    0x1  Data  Wk  tim.o [1]
+TIM2_CCR3H {Abs}       0x00005315    0x1  Data  Wk  tim.o [1]
+TIM2_CCR3L {Abs}       0x00005316    0x1  Data  Wk  tim.o [1]
+TIM2_OC3Init             0x009497   0x32  Code  Gb  tim.o [1]
+__exit                   0x009963    0x2  Code  Gb  xxexit.o [3]
+__iar_Dunscale           0x00929d         Code  Gb  float_libsup.o [4]
+__iar_Errno              0x000184    0x2  Data  Gb  errno.o [4]
+__iar_Log                0x0086bc  0x173  Code  Gb  xlog.o [4]
+__iar_copy_init2         0x009554         Code  Gb  init_small.o [4]
+__iar_data_init2         0x00974c   0x17  Code  Gb  init.o [4]
+__iar_program_start      0x0097ef         Code  Gb  cstartup.o [4]
+__iar_unhandled_exception
+                         0x009960         Code  Gb  unhandled_exception.o [4]
+__iar_zero_init2         0x00967b         Code  Gb  init_small.o [4]
+__intvec                 0x008000         Data  Gb  interrupt.o [4]
+__low_level_init         0x00995a    0x3  Code  Gb  low_level_init.o [4]
+_exit                    0x00993e         Code  Gb  cexit.o [4]
+_interrupt_1             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_10            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_11            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_12            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_13            0x009463         Code  Gb  tim.o [1]
+_interrupt_14            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_15            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_16            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_17            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_18            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_19            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_2             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_20            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_21            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_22            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_23            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_24            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_25            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_26            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_27            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_28            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_29            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_3             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_30            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_31            0x009957         Code  Wk  interrupt.o [4]
+_interrupt_4             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_5             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_6             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_7             0x009957         Code  Wk  interrupt.o [4]
+_interrupt_8             0x008ddf         Code  Gb  infrared.o [1]
+_interrupt_9             0x009957         Code  Wk  interrupt.o [4]
+adcData                  0x000056   0x69  Data  Lc  adc.o [1]
+cnt                      0x00018c    0x1  Data  Lc  tim.o [1]
+config                   0x0000bf   0x40  Data  Lc  config.o [1]
+exit                     0x00995d    0x3  Code  Gb  exit.o [4]
+iPid                     0x00013b   0x3c  Data  Lc  controller.o [1]
+infrared                 0x00017d    0x5  Data  Lc  infrared.o [1]
+ledMemory                0x000177    0x6  Data  Lc  display.o [1]
+ledNumber                0x0097b6   0x13  Data  Gb  display.o [1]
+main                     0x00882f  0x124  Code  Gb  main.o [1]
+mode                     0x000189    0x1  Data  Lc  menu.o [1]
+pidMode                  0x000052    0x1  Data  Lc  controller.o [1]
+pidState                 0x00018b    0x1  Data  Lc  pid.o [1]
+systemMenu               0x000037   0x1b  Data  Lc  menu.o [1]
+timecnt                  0x00018d    0x1  Data  Lc  tim.o [1]
+vPid                     0x0000ff   0x3c  Data  Lc  controller.o [1]
+
+
+[1] = G:\WorkSpace\USB Power\Software\USB\Release\Obj
+[2] = command line
+[3] = dbgstm8smn.a
+[4] = dlstm8smn.a
+
+  6 336 bytes of readonly  code memory
+     39 bytes of readwrite code memory
+    235 bytes of readonly  data memory
+    615 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,9 @@
+Record=TopLevelDocument|FileName=USB调压器.SchDoc
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=INFRARED|SchDesignator=INFRARED|FileName=INFRARED|SymbolType=Device Sheet|RawFileName=INFRARED|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=U_NTC|SchDesignator=U_NTC|FileName=NTC|SymbolType=Device Sheet|RawFileName=NTC|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=主控模块|SchDesignator=主控模块|FileName=主控模块|SymbolType=Normal|RawFileName=主控模块|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=按键模块|SchDesignator=按键模块|FileName=按键模块|SymbolType=Normal|RawFileName=按键模块|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=显示模块|SchDesignator=显示模块|FileName=显示模块|SymbolType=Normal|RawFileName=显示模块|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=USB调压器.SchDoc|Designator=电源模块|SchDesignator=电源模块|FileName=电源模块|SymbolType=Normal|RawFileName=电源模块|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=电源模块.SchDoc|Designator=U_ME6209|SchDesignator=U_ME6209|FileName=ME6209|SymbolType=Device Sheet|RawFileName=ME6209|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=电源模块.SchDoc|Designator=U_SX1308|SchDesignator=U_SX1308|FileName=SX1308|SymbolType=Device Sheet|RawFileName=SX1308|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
