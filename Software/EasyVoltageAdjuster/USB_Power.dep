@@ -6,104 +6,357 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\display.o</file>
-      <file>$PROJ_DIR$\Debug\List\pid.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\key.o</file>
+      <file>$PROJ_DIR$\User\controller.c</file>
       <file>$PROJ_DIR$\Debug\Obj\pid.o</file>
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\USB_Power.out</file>
+      <file>$PROJ_DIR$\User\tim.c</file>
+      <file>$PROJ_DIR$\User\share.h</file>
+      <file>$PROJ_DIR$\User\display.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.o</file>
+      <file>$PROJ_DIR$\User\pid.c</file>
+      <file>$PROJ_DIR$\User\display.c</file>
+      <file>$PROJ_DIR$\User\menu.c</file>
+      <file>$PROJ_DIR$\User\74hc595.c</file>
+      <file>$PROJ_DIR$\User\share.c</file>
+      <file>$PROJ_DIR$\User\menu.h</file>
+      <file>$PROJ_DIR$\User\infrared.h</file>
+      <file>$PROJ_DIR$\User\key.c</file>
+      <file>$PROJ_DIR$\User\pid.h</file>
+      <file>$PROJ_DIR$\User\74hc595.h</file>
+      <file>$PROJ_DIR$\User\infrared.c</file>
+      <file>$PROJ_DIR$\User\key.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.o</file>
+      <file>$PROJ_DIR$\User\controller.h</file>
+      <file>$PROJ_DIR$\User\adc.c</file>
+      <file>$PROJ_DIR$\User\adc.h</file>
+      <file>$PROJ_DIR$\User\tim.h</file>
+      <file>$PROJ_DIR$\User\type.h</file>
+      <file>$PROJ_DIR$\Debug\List\pid.lst</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
+      <file>$PROJ_DIR$\Debug\List\main.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\controller.o</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\74hc595.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\infrared.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\USB_Power.out</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\share.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\infrared.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\share.o</file>
+      <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\controller.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
       <file>$PROJ_DIR$\Debug\List\tim.lst</file>
       <file>$PROJ_DIR$\Debug\List\adc.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\infrared.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\share.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\share.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$PROJ_DIR$\Debug\List\USB_Power.map</file>
-      <file>$PROJ_DIR$\Debug\Obj\key.pbi</file>
       <file>$PROJ_DIR$\Debug\List\share.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\controller.pbi</file>
-      <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
-      <file>$PROJ_DIR$\Debug\Obj\menu.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\infrared.o</file>
-      <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
-      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
-      <file>$PROJ_DIR$\Debug\List\main.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\74hc595.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\menu.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\USB_Power.pbd</file>
-      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
-      <file>$PROJ_DIR$\Debug\Exe\USB_Power.hex</file>
-      <file>$PROJ_DIR$\Debug\Obj\74hc595.o</file>
       <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$PROJ_DIR$\Debug\List\key.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\tim.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$PROJ_DIR$\Debug\List\infrared.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\tim.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\controller.lst</file>
-      <file>$PROJ_DIR$\User\74hc595.h</file>
-      <file>$PROJ_DIR$\User\display.h</file>
-      <file>$PROJ_DIR$\User\share.c</file>
-      <file>$PROJ_DIR$\User\share.h</file>
-      <file>$PROJ_DIR$\User\menu.c</file>
-      <file>$PROJ_DIR$\User\key.c</file>
-      <file>$PROJ_DIR$\User\adc.c</file>
-      <file>$PROJ_DIR$\User\pid.h</file>
-      <file>$PROJ_DIR$\User\tim.c</file>
-      <file>$PROJ_DIR$\User\menu.h</file>
-      <file>$PROJ_DIR$\User\pid.c</file>
-      <file>$PROJ_DIR$\User\key.h</file>
-      <file>$PROJ_DIR$\User\infrared.h</file>
-      <file>$PROJ_DIR$\User\adc.h</file>
-      <file>$PROJ_DIR$\main.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\74hc595.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\USB_Power.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\List\key.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\pid.pbi</file>
-      <file>$PROJ_DIR$\User\display.c</file>
-      <file>$PROJ_DIR$\User\type.h</file>
-      <file>$PROJ_DIR$\User\controller.h</file>
-      <file>$PROJ_DIR$\User\tim.h</file>
-      <file>$PROJ_DIR$\User\controller.c</file>
-      <file>$PROJ_DIR$\User\74hc595.c</file>
-      <file>$PROJ_DIR$\User\infrared.c</file>
+      <file>$PROJ_DIR$\Debug\List\controller.lst</file>
+      <file>$PROJ_DIR$\Debug\Exe\USB_Power.hex</file>
+      <file>$PROJ_DIR$\Debug\List\infrared.lst</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 17 7</file>
+          <file> 53 38</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\controller.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 69 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 22 26 15 24 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 26 15 24 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\tim.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 51 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 25 26 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 25 26 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\pid.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 27 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 15 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 5 48 50 26 16 4 32 46 66 42 31 59 61 44 64 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 48 50 26 16 4 32 46 66 42 59 61 44 64 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\menu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 32 46 66 42 31 59 61 44 64 65 5 26 12 18 4 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 32 46 66 42 59 61 44 64 65 5 26 12 18 4 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\74hc595.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 16 4 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 16 4 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\share.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 54 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 67 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 18 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 18 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\infrared.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 71 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 13 26 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 13 26 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 29 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 55 25 26 24 12 18 4 5 13 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 52 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 50 24 26 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 50 24 26 4</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\USB_Power.out</name>
       <outputs>
         <tool>
-          <name>ILINK</name>
-          <file> 17</file>
+          <name>OBJCOPY</name>
+          <file> 70</file>
         </tool>
         <tool>
-          <name>OBJCOPY</name>
-          <file> 39</file>
+          <name>ILINK</name>
+          <file> 53</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 21 40 13 8 1 27 3 5 32 4 12 44 15 38</file>
+          <file> 28 62 34 30 21 35 6 2 37 1 47 57 39 60</file>
         </tool>
       </inputs>
     </file>
@@ -112,260 +365,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 31 6 20 35 11 18 0 22 64 14 47</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\share.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 19 12</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52 66</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 52 66</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\menu.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 22</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 32</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 25 24 33 16 36 45 26 34 42 50 66 58 60 52 67</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 25 24 33 16 23 36 45 26 34 42 50 66 58 60 52 67</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\key.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 18</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 43 3</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 60 66</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 60 66</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\adc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 6</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 10 13</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 62 66 52</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 62 66 52</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\tim.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 47</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 9 44</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 68 66 67</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 68 66 67</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\pid.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 64</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 2 4</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 56 66</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 56 66</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 0</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 30 5</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 41</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 41 68 66 62 58 60 52 50 61 67</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\display.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 1</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 28 29 66 49 52 25 24 33 16 36 45 26 34 42</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 50 28 29 66 49 52 25 24 33 16 23 36 45 26 34 42</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\controller.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 48 8</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 67 66 56 62 68</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 67 66 56 62 68</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\74hc595.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 31</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 40</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 49 52 66</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 49 52 66</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\infrared.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 11</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 27</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 29 61 66 68</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 28 29 61 66 68</file>
+          <file> 33 40 49 56 45 36 20 43 68 41 58</file>
         </tool>
       </inputs>
     </file>
@@ -377,373 +377,115 @@
   <configuration>
     <name>Release</name>
     <outputs>
-      <file>$PROJ_DIR$\User\config.h</file>
       <file>$PROJ_DIR$\User\eeprom.c</file>
+      <file>$PROJ_DIR$\User\eeprom.h</file>
+      <file>$PROJ_DIR$\User\controller.c</file>
       <file>$PROJ_DIR$\User\config.c</file>
-      <file>$PROJ_DIR$\Release\Obj\controller.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\key.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\config.o</file>
+      <file>$PROJ_DIR$\User\config.h</file>
+      <file>$PROJ_DIR$\User\temp.h</file>
+      <file>$PROJ_DIR$\User\tim.c</file>
+      <file>$PROJ_DIR$\User\share.h</file>
+      <file>$PROJ_DIR$\User\display.h</file>
+      <file>$PROJ_DIR$\User\pid.c</file>
+      <file>$PROJ_DIR$\User\display.c</file>
+      <file>$PROJ_DIR$\User\menu.c</file>
+      <file>$PROJ_DIR$\User\74hc595.c</file>
+      <file>$PROJ_DIR$\User\share.c</file>
+      <file>$PROJ_DIR$\User\menu.h</file>
+      <file>$PROJ_DIR$\User\infrared.h</file>
+      <file>$PROJ_DIR$\User\key.c</file>
+      <file>$PROJ_DIR$\User\pid.h</file>
+      <file>$PROJ_DIR$\User\74hc595.h</file>
+      <file>$PROJ_DIR$\User\infrared.c</file>
+      <file>$PROJ_DIR$\User\key.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\User\temp.c</file>
+      <file>$PROJ_DIR$\User\controller.h</file>
+      <file>$PROJ_DIR$\User\adc.c</file>
+      <file>$PROJ_DIR$\User\adc.h</file>
+      <file>$PROJ_DIR$\User\tim.h</file>
+      <file>$PROJ_DIR$\User\type.h</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\Release\List\USB_Power.map</file>
+      <file>$PROJ_DIR$\Release\Obj\infrared.o</file>
+      <file>$PROJ_DIR$\Release\Obj\config.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\temp.o</file>
+      <file>$PROJ_DIR$\Release\Obj\temp.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\share.o</file>
+      <file>$PROJ_DIR$\Release\Obj\eeprom.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\USB_Power.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Release\Obj\controller.o</file>
+      <file>$PROJ_DIR$\Release\Obj\key.o</file>
+      <file>$PROJ_DIR$\Release\Obj\74hc595.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\USB_Power.out</file>
+      <file>$PROJ_DIR$\Release\Obj\menu.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\share.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\tim.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\adc.o</file>
+      <file>$PROJ_DIR$\Release\Obj\infrared.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\tim.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Release\Exe\USB_Power.hex</file>
+      <file>$PROJ_DIR$\Release\Obj\pid.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\display.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Release\Obj\main.o</file>
       <file>$PROJ_DIR$\Release\Obj\pid.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
       <file>$PROJ_DIR$\Release\Obj\74hc595.o</file>
       <file>$PROJ_DIR$\Release\Obj\adc.pbi</file>
       <file>$TOOLKIT_DIR$\lib\dbgstm8smn.a</file>
       <file>$PROJ_DIR$\Release\Obj\display.o</file>
       <file>$PROJ_DIR$\Release\Obj\menu.o</file>
       <file>$PROJ_DIR$\Release\Obj\eeprom.o</file>
-      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\pid.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\USB_Power.pbd</file>
-      <file>$PROJ_DIR$\Release\Obj\temp.o</file>
-      <file>$PROJ_DIR$\Release\Obj\temp.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\share.o</file>
-      <file>$PROJ_DIR$\Release\Obj\tim.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\main.o</file>
-      <file>$PROJ_DIR$\Release\Obj\eeprom.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\key.o</file>
-      <file>$PROJ_DIR$\Release\List\USB_Power.map</file>
-      <file>$PROJ_DIR$\Release\Exe\USB_Power.hex</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$PROJ_DIR$\Release\Obj\infrared.o</file>
-      <file>$PROJ_DIR$\Release\Obj\share.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\infrared.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\controller.o</file>
-      <file>$PROJ_DIR$\Release\Obj\74hc595.pbi</file>
-      <file>$PROJ_DIR$\Release\Exe\USB_Power.out</file>
-      <file>$PROJ_DIR$\Release\Obj\display.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\menu.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\adc.o</file>
-      <file>$PROJ_DIR$\Release\Obj\config.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\tim.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
-      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
       <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$PROJ_DIR$\User\74hc595.h</file>
-      <file>$PROJ_DIR$\User\display.h</file>
-      <file>$PROJ_DIR$\User\share.c</file>
-      <file>$PROJ_DIR$\User\share.h</file>
-      <file>$PROJ_DIR$\User\eeprom.h</file>
-      <file>$PROJ_DIR$\User\menu.c</file>
-      <file>$PROJ_DIR$\User\key.c</file>
-      <file>$PROJ_DIR$\User\adc.c</file>
-      <file>$PROJ_DIR$\User\temp.c</file>
-      <file>$PROJ_DIR$\User\pid.h</file>
-      <file>$PROJ_DIR$\User\tim.c</file>
-      <file>$PROJ_DIR$\User\menu.h</file>
-      <file>$PROJ_DIR$\User\temp.h</file>
-      <file>$PROJ_DIR$\User\pid.c</file>
-      <file>$PROJ_DIR$\User\key.h</file>
-      <file>$PROJ_DIR$\User\infrared.h</file>
-      <file>$PROJ_DIR$\User\adc.h</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\User\display.c</file>
-      <file>$PROJ_DIR$\User\type.h</file>
-      <file>$PROJ_DIR$\User\controller.h</file>
-      <file>$PROJ_DIR$\User\tim.h</file>
-      <file>$PROJ_DIR$\User\controller.c</file>
-      <file>$PROJ_DIR$\User\74hc595.c</file>
-      <file>$PROJ_DIR$\User\infrared.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Release\Obj\controller.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\key.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\config.o</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\User\eeprom.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 21</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 12</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58 73 46 47</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 58 73 46 47</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\config.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 5</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 0 73 58</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 0 73 58</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 31 23</file>
+          <file> 50 37</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Release\Obj\USB_Power.pbd</name>
-      <inputs>
-        <tool>
-          <name>BILINK</name>
-          <file> 30 8 35 3 32 21 28 4 13 33 14 27 17 19</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Release\Exe\USB_Power.out</name>
+      <name>$PROJ_DIR$\User\eeprom.c</name>
       <outputs>
         <tool>
-          <name>ILINK</name>
-          <file> 23</file>
+          <name>ICCSTM8</name>
+          <file> 70</file>
         </tool>
         <tool>
-          <name>OBJCOPY</name>
-          <file> 24</file>
+          <name>BICOMP</name>
+          <file> 44</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ILINK</name>
-          <file> 41 7 34 5 29 10 12 26 22 20 11 6 18 16 36 39 9</file>
+          <name>ICCSTM8</name>
+          <file> 1 27 35 36</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\share.c</name>
-      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 27</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 18</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 57 73</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 57 73</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\menu.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 33</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 11</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 47 44 43 48 40 50 53 45 49 52 55 73 65 68 57 74 0</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 47 44 43 48 40 42 50 53 45 49 52 55 73 65 68 57 74 0</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\key.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 4</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 22</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 47 68 73</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 47 68 73</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\adc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 34</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 47 70 73 57</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 47 70 73 57</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\temp.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 17</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 16</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 66 73 38 43 25 48 40 50 53 45 37</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 66 73 38 43 25 48 40 42 50 53 45 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\tim.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 19</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 36</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 47 75 73 74</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 47 75 73 74</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\pid.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 6</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 63 73</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 63 73</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 13</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 20</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 47 51</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 47 51 75 73 70 65 68 57 55 69 74 58 66</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\User\display.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 32</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 10</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 55 46 47 73 54 57 44 43 48 40 50 53 45 49 52</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 55 46 47 73 54 57 44 43 48 40 42 50 53 45 49 52</file>
+          <file> 1 27 35 36</file>
         </tool>
       </inputs>
     </file>
@@ -751,22 +493,137 @@
       <name>$PROJ_DIR$\User\controller.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 3</file>
+          <name>ICCSTM8</name>
+          <file> 47</file>
         </tool>
         <tool>
-          <name>ICCSTM8</name>
-          <file> 29</file>
+          <name>BICOMP</name>
+          <file> 76</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 74 73 63 70 75</file>
+          <name>ICCSTM8</name>
+          <file> 23 27 17 25 26</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 23 27 17 25 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\config.c</name>
+      <outputs>
+        <tool>
           <name>ICCSTM8</name>
-          <file> 74 73 63 70 75</file>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 27 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 27 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\tim.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 36 26 27 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 36 26 27 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\pid.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 17 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 8 35 36 27 18 7 30 34 75 32 29 71 72 33 73 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 35 36 27 18 7 30 34 75 32 71 72 33 73 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\menu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 36 30 34 75 32 29 71 72 33 73 74 8 27 14 20 7 23 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 36 30 34 75 32 71 72 33 73 74 8 27 14 20 7 23 4</file>
         </tool>
       </inputs>
     </file>
@@ -774,22 +631,68 @@
       <name>$PROJ_DIR$\User\74hc595.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 30</file>
+          <name>ICCSTM8</name>
+          <file> 65</file>
         </tool>
         <tool>
-          <name>ICCSTM8</name>
-          <file> 7</file>
+          <name>BICOMP</name>
+          <file> 49</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 46 47 54 57 73</file>
+          <name>ICCSTM8</name>
+          <file> 35 36 18 7 27</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 35 36 18 7 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\share.c</name>
+      <outputs>
+        <tool>
           <name>ICCSTM8</name>
-          <file> 46 47 54 57 73</file>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 7 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 36 20 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 36 20 27</file>
         </tool>
       </inputs>
     </file>
@@ -797,22 +700,119 @@
       <name>$PROJ_DIR$\User\infrared.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 28</file>
+          <name>ICCSTM8</name>
+          <file> 38</file>
         </tool>
         <tool>
-          <name>ICCSTM8</name>
-          <file> 26</file>
+          <name>BICOMP</name>
+          <file> 55</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 46 47 69 73 75</file>
+          <name>ICCSTM8</name>
+          <file> 35 36 15 27 26</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 35 36 15 27 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
           <name>ICCSTM8</name>
-          <file> 46 47 69 73 75</file>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 36 64 26 27 25 14 20 7 8 15 23 1 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 36 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\temp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 5 27 61 34 46 75 32 29 71 72 33 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 27 61 34 46 75 32 71 72 33 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\User\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 36 25 27 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 36 25 27 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\USB_Power.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 49 66 39 76 60 44 55 77 40 51 59 52 42 53</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\USB_Power.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ILINK</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 28 65 54 78 47 68 70 38 48 62 69 63 43 41 56 31 67</file>
         </tool>
       </inputs>
     </file>
